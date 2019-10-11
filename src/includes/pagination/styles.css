@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  float: right;
+  color: label-color;
+}
+
+.text {
+  line-height: 48px;
+}

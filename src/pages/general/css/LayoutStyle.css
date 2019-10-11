@@ -1,0 +1,42 @@
+.TopBanner{
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+.Description{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 2;
+    font-size: 18px;
+}
+.BottomSpace {
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+.WhiteBG{
+    background:  #ffffff;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    .TopBanner {
+        padding-top: 30%;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .TopBanner {
+        padding-top: 30%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .TopBanner {
+        padding-top: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .TopBanner {
+        padding-top: 30%;
+    }
+}

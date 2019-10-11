@@ -1,0 +1,64 @@
+.featured-company .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-bottom: 40px;
+    background: linear-gradient(rgba(255, 255, 255, 0), #001061 90%);
+    color: white;
+}
+
+.featured-company .details {
+    min-height: 160px;
+    padding: 0 40px;
+}
+
+.featured-company .callout {
+    padding-top: 20px;
+}
+.callout {
+    text-align: center;
+    margin: -1px 0;
+}
+ 
+.callout .btn {
+    margin: 4px;
+}
+
+.page-common .btn {
+    text-transform: uppercase;
+}
+.page-common .btn {
+    font-family: AvenirLTStd-Black,sans-serif;
+}
+.mi-btn-secondary {
+    color: white;
+    border: solid white 2px;
+    background-color: transparent;
+    transition: 0.20s all;
+}
+.btn {
+    text-decoration: none;
+    font-size: larger;
+    padding: 8px 18px;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.featured-company {
+    flex: 1;
+    flex-basis: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #DCD7D7;
+    justify-content: flex-end;
+    border: solid 2px white;
+}
+
+.featured-companies {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px white;
+}

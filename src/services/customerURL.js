@@ -1,0 +1,1 @@
+export const customerURL = "https://api.ofoegbugoodnews.com/";

@@ -17,8 +17,8 @@ class MyExperienceCard extends Component {
         return (<div className={classes.RightColumn}>
                     <h3><i className="fa fa-briefcase"/> Work Experience</h3>
                     { 
-                        experiences.map(experience => (<div className={classes.MyExperience} key={experience.id}>
-                            {experience.active === '1' ? <div>
+                        experiences && experiences.filter(x => x.active === 1).map(experience => 
+                            <div className={classes.MyExperience} key={experience.id}>
                             <h4><strong>{experience.job_title +' / '+ experience.company}</strong></h4>
                             <p className={classes.date}>
                                 <i className="fa fa-calendar"/> 
@@ -26,10 +26,7 @@ class MyExperienceCard extends Component {
                             </p>
                             {renderHTML(experience.achievement)}
                             <hr/>
-                            </div> :
-                            ''
-                            }
-                        </div>))
+                        </div>)
                     }
                 </div>)
     }

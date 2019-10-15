@@ -10,28 +10,30 @@ class MyBlogListCard extends Component {
   render() {
     const { payload, isLoading } = this.props;
 
+    console.log("payload", payload);
+
     if (isLoading) {
       return <p>loading...</p>;
     }
     return (
-        <div className="row">
+          <div className="row">
           {
-            payload.map(blog => (
-              blog.active === '1' ? <div className="col-md-6" key={blog.id}>
-            <Link to={`/blog/${blog.id}/ext/${blog.slug}/${blog.created_at}`}>
-                <div className="stack-card">
-                <img src={blog.image} alt={blog.slug} className="img-fluid"/>
-                <h3>{blog.title}</h3>
-                <TextTruncate
-                    line={3}
-                    truncateText="…"
-                    text={blog.short_text}/>
-                </div>
+            payload && payload.filter(x => x.active === 1).map(blog => (
+              <div className="col-md-6" key={blog.id}>
+                  <Link to={`/blog/${blog.id}/ext/${blog.slug}/${blog.created_at}`}>
+                    <div className="stack-card">
+                    <img src={blog.image} alt={blog.slug} className="img-fluid"/>
+                    <h3>{blog.title}</h3>
+                    <TextTruncate
+                        line={3}
+                        truncateText="…"
+                        text={blog.short_text}/>
+                    </div>
                  </Link>
-            </div> : ''))
+            </div>))
            
           }
-        </div>
+        </div> 
     );
   }
 }

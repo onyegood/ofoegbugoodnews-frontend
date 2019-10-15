@@ -17,18 +17,16 @@ class MyEducationListCard extends Component {
         return (<div className={classes.RightColumn}>
                     <h3><i className="fa fa-certificate"/> Education</h3>
                     { 
-                        schools.map(school => (<div className={classes.MyExperience} key={school.id}>
-                            {school.active === '1' ? <div>
-                            <h4><strong>{school.course_of_study } / { school.school }</strong></h4>
-                            <p className={classes.date}>
-                                <i className="fa fa-calendar"/> 
-                                {school.end_date}
-                            </p>
-                            <p>{school.certificate}</p>
-                            <hr/>
-                            </div> : ''
-                            }
-                        </div>))
+                        schools && schools.filter(x => x.active === 1).map(school => 
+                            <div className={classes.MyExperience} key={school.id}>
+                                <h4><strong>{school.course_of_study } / { school.school }</strong></h4>
+                                <p className={classes.date}>
+                                    <i className="fa fa-calendar"/> 
+                                    {school.end_date}
+                                </p>
+                                <p>{school.certificate}</p>
+                                <hr/>
+                            </div>)
                     }
                 </div>)
     }

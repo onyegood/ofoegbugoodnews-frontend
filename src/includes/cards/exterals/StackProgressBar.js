@@ -16,11 +16,9 @@ class MyInfoCard extends Component {
         return (
             <div>
                 <div className={classes.MyInfoContainer}>
-                     
                      <h4>My Stack</h4>
                       <hr/>
-                      {stacks.map(stack => (
-                          stack.active === '1' ? 
+                      {stacks && stacks.filter(x => x.active === 1).map(stack => (
                           <div key={stack.id}>
                                 <p><i className="fa fa-code" /> {stack.title}</p>
                                 <div className="progress" style={{height: '20px'}}>
@@ -29,7 +27,7 @@ class MyInfoCard extends Component {
                                     {stack.rate}
                                 </div>
                             </div>
-                        </div> : ''))}
+                        </div>))}
               </div>
            </div>
         )

@@ -70,12 +70,12 @@ class NavLinkItems extends Component {
                     </NavLink>
                 </li>}
 
-                {!isAuthenticated && <li className="nav-item signin">
+                {/* {!isAuthenticated && <li className="nav-item signin">
                     <NavLink className="nav-link" to="/user/login">Sign In</NavLink>
-                </li>}
-                {!isAuthenticated && <li className="nav-item signup">
+                </li>} */}
+                {/* {!isAuthenticated && <li className="nav-item signup">
                     <NavLink className="nav-link" to="/user/signup">Sign Up</NavLink>
-                </li>}
+                </li>} */}
 
             </ul>
         );

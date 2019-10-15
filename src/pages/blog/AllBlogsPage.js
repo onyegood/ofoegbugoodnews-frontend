@@ -24,6 +24,7 @@ class AllBlogPage extends Component {
     pageOfItems: []
   };
 
+  
   onChangePage = pageOfItems => {
     this.setState({ pageOfItems: pageOfItems });
   };
@@ -31,6 +32,7 @@ class AllBlogPage extends Component {
   render() {
     const { payload, deleteblog, isLoading, isAuthenticated } = this.props;
     const { pageOfItems } = this.state;
+
 
     if (isLoading) {
       return <DotLoader />;
@@ -54,7 +56,7 @@ class AllBlogPage extends Component {
               <hr />
                 <div className="inner-white-card">
                   <BlogListCard
-                    payload={pageOfItems}
+                    payload={payload}
                     deleteblog={deleteblog}
                   />
 

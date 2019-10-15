@@ -14,8 +14,8 @@ class PortfolioSection extends Component {
         return (
                 <div className="container-fluid">
                     <div className="row">
-                        {portfolios.map(portfolio => (
-                            portfolio.active === '1' ? <div className="featured-company"
+                        {portfolios && portfolios.filter(x => x.active === 1).map(portfolio => (
+                            <div className="featured-company"
                              style={{
                                  background: `url(${portfolio.image})`,
                                  backgroundPosition: 'center center',
@@ -40,7 +40,7 @@ class PortfolioSection extends Component {
                                         Read more</Link>
                                 </div>
                             </div>
-                        </div> : ''))}
+                        </div>))}
                     </div>
                 </div>
         )

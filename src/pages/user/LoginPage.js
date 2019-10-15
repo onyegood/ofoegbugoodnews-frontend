@@ -27,8 +27,8 @@ class LoginPage extends Component {
                       <p className="text-center">Please sign in</p>
                       <LoginForm />
 
-                       <GoogleSocialAuth />
-                       <FacebookSocialAuth />
+                       {/* <GoogleSocialAuth />
+                       <FacebookSocialAuth /> */}
                     </div>
                   </div>
                 </div>

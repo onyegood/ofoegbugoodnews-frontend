@@ -79,13 +79,13 @@ class LoginForm extends Component {
                     Login
                 </button>
 
-                <small className="form-text text-center">
+                {/* <small className="form-text text-center">
                     <Link to="/">HOME</Link>
                     or
                     <Link to="/user/signup">SIGN UP</Link>
                     if you don't have an account<br/>
                     <Link to="/user/forgot_password">Forgot Password?</Link>
-                </small>
+                </small> */}
             </form>
 
         return (form);

@@ -1,1 +1,1 @@
-export const customerURL = "https://api.ofoegbugoodnews.com/";
+export const customerURL = "http://api.ofoegbugoodnews.com/";

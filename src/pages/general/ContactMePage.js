@@ -60,7 +60,7 @@ componentWillReceiveProps(nextProps) {
           <div className="col-md-4 justify-content-top align-self-top">
             <div className="blanck"></div>
             <p><i className="fa fa-phone" /> +234(0)7031002066</p>
-            <p><i className="fa fa-envelope" /> hello@ofoegbugoodnews.com, goodmomen@gmail.com</p>
+            <p><i className="fa fa-envelope" /> goodmomen@gmail.com</p>
 
             <MySocialLink />
           </div>
